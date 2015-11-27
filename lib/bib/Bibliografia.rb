@@ -1,4 +1,5 @@
 class Bibliografia
+    include Comparable
     
     attr_reader :autores, :titulo, :serie, :editorial, :numeroedicion, :fechapublicacion, :isbn
     attr_accessor :autores, :titulo, :fechapublicacion
@@ -7,7 +8,14 @@ class Bibliografia
         @titulo = titulo
         @fechapublicacion = fechapublicacion
     end
+    
+    def to_s
+      "#{@autores.join(",")}\n#{@titulo}\n#{@fecha}"
+    end
    
+    def <=> other
+        autores <=> other.autores
+    end
 end
 
 
