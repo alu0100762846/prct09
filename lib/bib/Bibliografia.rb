@@ -1,6 +1,6 @@
 class Bibliografia
     include Comparable
-    
+   
     attr_reader :autores, :titulo, :serie, :fechapublicacion
     attr_accessor :autores, :titulo, :fechapublicacion
     def initialize(autores, titulo, fechapublicacion)
