@@ -1,3 +1,4 @@
+#encoding:utf-8
 require './lib/bib/Bibliografia.rb'
 require './lib/bib/lista.rb'
     
