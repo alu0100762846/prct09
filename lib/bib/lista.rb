@@ -73,12 +73,18 @@ class Lista
       return aux
    end
    
+   
+   def to_s
+         @inicio.to_s 
+   end
+   
    def each
    		nodo = @inicio
    		while(nodo != nil)
    			yield nodo.value
    			nodo = nodo.next
    		end
-   	end 
+   		
+   end 
    
 end
