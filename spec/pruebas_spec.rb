@@ -161,7 +161,7 @@ describe Lista do
           expect(@l6.all?).to eq(true)
         end
         
-        #######################################
+        ########################################
         
         
         it "comprobrando el metodo any? con Bibliografia" do
